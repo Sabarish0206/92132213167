@@ -18,7 +18,7 @@ await mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-console.log('✅ Connected to MongoDB Atlas');
+console.log('Connected to MongoDB Atlas');
 
 app.use('/shorten', shortenerRoutes); 
 app.use('/log', logRoute);         
